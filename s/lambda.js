@@ -13,7 +13,8 @@ exports.handler = function (event, context, callback) {
 			console.log(data);
 			response = data
 		};
+		callback(null, response);
 	});
 
-	callback(null, response);
+	
 }
